@@ -1,0 +1,4 @@
+# Chrome-devtools-RequstSearch
+在组件层级复杂的代码中知道某个数据来源于某个字段，但不知道是哪个接口下发的
+
+当前在控制台可以把页面的接口url和response都打印出来，通过搜索console中的内容，可以看到接口
