@@ -1,0 +1,38 @@
+{
+  "name": "Request Search",
+  "version": "1.0",
+  "description": "Search field from network.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "css": [
+        "custom.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://*/"
+  ],
+  "devtools_page": "devtools.html",
+  "manifest_version": 2
+}
